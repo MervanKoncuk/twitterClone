@@ -829,7 +829,6 @@ a{
     }
 
     .main-account .main-account-a {
-        margin-left: 0 !important;
         padding: 0 !important;
     }
 
@@ -870,7 +869,13 @@ a{
         padding: 10px 0 10px 60px;
     }
 
+    .messagaBoxRight .message p {
+        font-size: .8rem;
+    }
 
+    .messageBoxIcon ul {
+        font-size: 12px;
+    }
 }
 
 
