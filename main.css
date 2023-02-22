@@ -1,6 +1,3 @@
-
-
-
 ul {
     margin: 0 !important;
     padding: 0 !important;
@@ -30,6 +27,12 @@ img {
 
 .content {
     margin-top: .5rem;
+
+
+
+
+
+    
 }
 
 /* LeftSide Start */
@@ -560,6 +563,244 @@ img {
 }
 /* Message Box */
 
+
+
+
+body{
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+.box{
+    width: 600px;
+    height: 650px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+
+}
+.close-btn > span{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.logo{
+    margin: 5px auto;
+}
+.logo > span{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding: 5px;
+    
+}
+.google-btn{
+    width: 300px;
+    height: 44px;
+    border: 1px solid #bfbfbf;
+    border-radius: 30px;
+    margin: auto;
+    color: #585858;
+}
+a{
+    text-decoration: none;
+}
+.apple-btn{
+    width: 300px;
+    height: 44px;
+    border: 1px solid #bfbfbf;
+    border-radius: 30px;
+    margin: auto;
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 2px;
+}
+
+#text-veya > p{
+    color: #464646;
+    text-align: center;
+    font-size: 16px;
+    max-width: 600px;
+    position: relative;
+}
+
+#text-veya > p::before{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 0.5px;
+    background: #b9b9b9;
+    left: 170px;
+    top: 50%;
+    position: absolute;
+}
+
+#text-veya > p::after{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 0.5px;
+    background: #b9b9b9;
+    right: 170px;
+    top: 50%;
+    position: absolute;
+}
+
+#input-num{
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    padding-left: 8px;
+}
+
+#input-num::placeholder{
+    font-size: 20px;
+}
+
+
+.ileri-btn{
+    width: 300px;
+    height: 36px;
+    background-color: #0f0f0f;
+    border-radius: 30px;
+    margin: auto;
+    color: #eeeeee;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+.sifre-btn{
+    width: 300px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #b5b5b5;
+    border-radius: 30px;
+    margin: auto;
+    color: #0f0f0f;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 3px;
+    transition: all 0.5s ease;
+}
+
+.sifre-btn:hover{
+    background-color: #acacac;
+}
+
+#policy-use{
+    margin-left: 150px;
+}
+
+.right-list-baslik{
+    background-color: #f7f9f9;
+    width: 350px;
+    height: 45px;
+    padding-top: 10px;
+    font-size: large;
+    border-radius: 20px 20px 0 0;
+}
+
+.hover-effect{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f9f9;
+    width: 350px;
+    height: auto;
+    padding-top: 10px;
+    
+}
+.hover-effect:hover{
+    background-color: #e1e1e1;
+}
+
+.hover-effect >div > a{
+    color: #0f0f0f;
+}
+
+.gundem-3nokta{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.gundem-3nokta:hover{
+    border: 1px solid #c0c0c0;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+}
+
+.hover-effect > h6 {
+    color: #1d9bf0;
+}
+
+#daha-fazla{
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.takip-btn{
+    width: 80px;
+    height: 30px;
+    background-color: #0f0f0f;
+    text-align: center;
+    border-radius: 30px;
+    color: #eeeeee;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+.hover-takip{
+    
+    background-color: #f7f9f9;
+    width: 330px;
+    height: auto;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+#custom-input{
+    width: 330px;
+    height: 50px;
+    border: 1px solid #dfdfdf;
+    border-radius: 40px;
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#custom-input > i{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#myinput{
+    border: none;
+    background-color: #dfdfdf;
+    
+}
+
+#myinput:focus{
+    border: none;
+    outline: none;
+    
+}
 
 
 
