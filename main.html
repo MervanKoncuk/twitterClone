@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitter | Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-3">
+          <div class="leftSide">
+            <div class="nav-links">
+              <a class="nav-link-a mb-4 twit" href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="nav-link-a active href="">
+                <i class="fa-solid fa-house"></i>
+                <span>Anasayfa</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-hashtag"></i>
+                <span>Keşfet</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-regular fa-bell"></i>
+                <span>Bildirimler</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Mesajlar</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Yer İşaretleri</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-list"></i>
+                <span>Listeler</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-user"></i>
+                <span>Profil</span>
+              </a>
+              <a class="nav-link-a href="">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>Daha Fazla</span>
+              </a>
+              <div class="tweet-button mt-2">
+                <button type="button" class="btn btn-primary mybtn">Tweetle</button>
+              </div>
+              <div class="main-account">
+                <a class="main-account-a" href="">
+                  <img class="account-img" src="./img/user.jpg" alt="">
+                  <div class="account-details">
+                    <span class="acoount-name"> <strong>Fatih Soyaltun</strong> </span>
+                    <span class="acoount-email">@soyaltunfatih</span>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 center">
+          <div class="centerContent">
+            <div class="heading">
+              <h1 class="heading-text">Anasayfa</h1>
+            </div>
+            <div class="tablist">
+              <div class="presantation">
+                <a class="presantationA active-link" href="#" onclick="changeTab(event, 'personal')">Sana Özel</a>
+              </div>
+              <div class="presantation">
+                <a class="presantationA" href="#" onclick="changeTab(event, 'following')">Takip Edilenler</a>
+              </div>
+            </div>
+            <div class="inputHeader mt-1">
+              <div class="left">
+                <div class="imgBox">
+                  <img src="./img/user.jpg" alt="" />
+                </div>
+              </div>
+              <div class="right">
+                <div class="dropDown">
+                  <div class="btn-group mb-2">
+                    <button
+                      type="button"
+                      class="btn myBtn btn-dark dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Herkes
+                    </button>
+                    <ul class="dropdown-menu">
+                      <h5 class="mx-2 mt-2"><strong>Hedef kitle seç</strong></h5>
+                      <li class="d-flex"><i class="fa-solid fa-earth-americas world"></i><a class="worldText" href="">Herkes</a></li>
+                      <li class="d-flex">
+                        <i class="fa-solid fa-users userA"></i>
+                        <div class="">
+                          <a class="userAtext" href="">Twitter çevresi</a>
+                          <div class="d-flex pTag">
+                          <p><strong>0</strong> Kişi</p>
+                          <a class="mx-2 aTag" href="">Düzenle</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="centerInput">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control focus inputTweet"
+                      id="textInput"
+                      placeholder="Neler oluyor?"
+                    />
+                  </div>
+                </div>
+                <div class="dropDownTwo">
+                  <div class="btn-group mb-2">
+                    <button
+                      type="button"
+                      class="btn myBtn myBtnTwo btn-dark dropdown-toggle1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-earth-europe"></i>
+                      <strong>Herkes yanıtlayabilir</strong>
+                    </button>
+                    <ul class="dropdown-menu showTwo">
+                      <h6 class="mx-2 mt-2"><strong>Kimler yanıtlayabilir?</strong></h6>
+                      <p class="mx-2 pDrop">Bu Tweeti kimlerin yanıtlayabileceğini seç. Bahsedilen herkes her zaman yanıtlayabilir.</p>
+                      <li class="d-flex"><i class="fa-solid fa-earth-americas world"></i><a class="worldText" href="">Herkes</a></li>
+                      <li class="d-flex"><i class="fa-solid fa-user-minus world"></i><a class="worldText" href="">Takip ettiğin kişiler</a></li>
+                      <li class="d-flex"><i class="fa-solid fa-at world"></i><a class="worldText" href="">Yalnızca bahsettiğin kişiler</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="iconSet">
+                  <div class="iconSet-left p-3">
+                    <ul class="d-flex gap-3">
+                      <li><i class="fa-regular fa-image"></i></li>
+                      <li><i class="fa-solid fa-gift"></i></li>
+                      <li><i class="fa-regular fa-face-smile"></i></li>
+                      <li><i class="fa-solid fa-list"></i></li>
+                      <li><i class="fa-regular fa-calendar-days"></i></li>
+                      <li><i class="fa-solid fa-location-dot"></i></li>
+                    </ul>
+                  </div>
+                  <div class="iconSet-right ms-auto">
+                    <button type="button" class="btn btn-primary twitBtn" onclick="tweetSend()">
+                      Tweetle
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="mesaj">
+              <div id="tMessage" class="messegaBox">
+                <div class="messagaBoxLeft">
+                  <div class="imgBox">
+                    <img src="./img/user.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="messagaBoxRight">
+                  <div class="userId">
+                    <h6>Fatih Soyaltun <span>@fatihsoyaltun . 1s</span></h6>
+                  </div>
+                  <div class="message">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Nesciunt minima, iure in pariatur quia fuga.
+                    </p>
+                  </div>
+                  <div class="messageBoxIcon">
+                    <ul>
+                      <li class="comment">
+                        <i class="fa-regular fa-comment"></i> 44
+                      </li>
+                      <li class="request">
+                        <i class="fa-solid fa-code-pull-request"></i> 50
+                      </li>
+                      <li class="heart">
+                        <i class="fa-regular fa-heart"></i> 250
+                      </li>
+                      <li class="signal">
+                        <i class="fa-solid fa-signal"></i> 682
+                      </li>
+                      <li class="upload"><i class="fa-solid fa-upload"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 rightSide">TEST
+          <div id="message-box">
+            <div class="message-tab">
+              <div class="message-tab-in">
+                <div class="leftMessage">
+                  <h4>Mesajlar</h4>
+                </div>
+                <div class="rightMessage mx-3">
+                  <a title="Yeni Mesaj"><i class="fa-regular fa-comments"></i></a>
+                  <a title="Aç"><i class="fa-solid fa-angles-up upArrow"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="message-content">
+              <div class="parent">
+                <div class="chat-account">
+                  <a class="chat-account-a" href="#">
+                    <img class="chat-img" src="./img/user.jpg" alt="">
+                    <div class="chat-details">
+                      <span class="chat-name">Fatih Soyaltun</span>
+                      <span class="chat-text">Bir Tweet paylaştı</span>
+                    </div>
+                    <i style="color: black;" class="fa-solid fa-lock"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="parent">
+                <div class="chat-account">
+                  <a class="chat-account-a" href="#">
+                    <img class="chat-img" src="./img/user.jpg" alt="">
+                    <div class="chat-details">
+                      <span class="chat-name">Fatih Soyaltun</span>
+                      <span class="chat-text">Bir Tweet paylaştı</span>
+                    </div>
+                    <i style="color: black;" class="fa-solid fa-lock"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="parent">
+                <div class="chat-account">
+                  <a class="chat-account-a" href="#">
+                    <img class="chat-img" src="./img/user.jpg" alt="">
+                    <div class="chat-details">
+                      <span class="chat-name">Fatih Soyaltun</span>
+                      <span class="chat-text">Bir Tweet paylaştı</span>
+                    </div>
+                    <i style="color: black;" class="fa-solid fa-lock"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="parent">
+                <div class="chat-account">
+                  <a class="chat-account-a" href="#">
+                    <img class="chat-img" src="./img/user.jpg" alt="">
+                    <div class="chat-details">
+                      <span class="chat-name">Fatih Soyaltun</span>
+                      <span class="chat-text">Bir Tweet paylaştı</span>
+                    </div>
+                    <i style="color: black;" class="fa-solid fa-lock"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="parent">
+                <div class="chat-account">
+                  <a class="chat-account-a" href="#">
+                    <img class="chat-img" src="./img/user.jpg" alt="">
+                    <div class="chat-details">
+                      <span class="chat-name">Fatih Soyaltun</span>
+                      <span class="chat-text">Bir Tweet paylaştı</span>
+                    </div>
+                    <i style="color: black;" class="fa-solid fa-lock"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
