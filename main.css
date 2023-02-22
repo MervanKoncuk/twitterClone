@@ -803,7 +803,46 @@ a{
     outline: none;
     
 }
+/* Responsive OffCanvas Menu  */
+.responisve-navmenu{
+    display: none;
+    background-color: #156ba0;
+    width: 100%;
+    height: 3rem;
+}
+.responisve-navmenu i{
+    color: white;
+}
+#canv{
+    display: none;
+    margin-right: 2rem;
+}
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;  
+    background-image: url(https://www.freeiconspng.com/thumbs/logo-twitter-png/black-logo-twitter-26.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+}
 
+.offcanvas-body a {
+    padding-top: 2rem;
+}
+.offcanvas-body a:hover{
+    background-color: #acacac;
+    border-radius:16px;
+}
+.offcanvas-body a i{
+    width: 2rem;
+}
+.offcanvas-body a span{
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+.heading{
+    display: flex;
+}
 
 /* Responsive*/
 
@@ -811,6 +850,7 @@ a{
     .rightSide {
         display: none;
     }
+    .leftSide{display: none;}
 
     .nav-links .nav-link-a span {
         display: none;
@@ -824,7 +864,7 @@ a{
     }
 
     .center {
-        width: 70%;
+        width: 100%;
     }
 
     .iconSet {
@@ -884,8 +924,12 @@ a{
     .messageBoxIcon ul {
         font-size: 12px;
     }
+    .responisve-navmenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
-
-
-
-
+#canv{
+    display: block;
+}
+}
