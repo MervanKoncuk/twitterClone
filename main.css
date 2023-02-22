@@ -5,6 +5,10 @@ ul {
 
 a{
     text-decoration: none;
+
+
+
+    
 }
 
 ul li {
@@ -50,6 +54,10 @@ img {
 
 .nav-links .active {
     font-weight: 700;
+
+
+
+    
 }
 
 .nav-links .nav-link-a .fa-twitter {
