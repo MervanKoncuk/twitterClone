@@ -1,12 +1,6 @@
 ul {
     margin: 0 !important;
     padding: 0 !important;
-<<<<<<< HEAD
-
-
-    
-=======
->>>>>>> 31e27525866dffa55882e0dc40dad9852a0b31aa
 }
 
 a{
@@ -23,12 +17,6 @@ img {
 
 .content {
     margin-top: .5rem;
-
-
-
-
-
-    
 }
 
 /* LeftSide Start */
@@ -39,6 +27,7 @@ img {
     justify-content: space-between;
     padding: 10px 0 10px 60px;
     height: 100%;
+    /* position:fixed; */
 }
 
 .nav-links {
@@ -46,7 +35,6 @@ img {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 70%;
     cursor: pointer;
 }
 
@@ -108,6 +96,15 @@ img {
     border-color: #fff;
 }
 
+.tweetButton {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(29,155,249,0.9);
+    border-radius: 100px;
+    padding: 10px;
+    display: none;
+}
+
 .main-account {
     width: 100%;
     height: 30px;
@@ -157,10 +154,11 @@ img {
 /* Center Start */
 .center {
     width: 40%;
+    /* min-width: 300px; */
     border-right: 1px solid rgba(214, 214, 214, 0.532);
     border-left: 1px solid rgba(214, 214, 214, 0.532);
     overflow-y:scroll;
-    height: 700px;
+    /* height: 700px; */
 }
 
 /* .center .centerContent .heading {
@@ -796,6 +794,56 @@ a{
     border: none;
     outline: none;
     
+}
+
+
+/* Responsive*/
+
+@media screen and (max-width:800px){
+    .rightSide {
+        display: none;
+    }
+
+    .nav-links .nav-link-a span {
+        display: none;
+    }
+    .nav-links .main-account .main-account-a .account-details {
+        display: none;
+    }
+
+    .nav-links .main-account .main-account-a i {
+        display: none;
+    }
+
+    .center {
+        width: 70%;
+    }
+
+    .iconSet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .iconSet-right {
+        margin: auto !important ;
+    }
+
+    .iconSet-left {
+        /* display: none; */
+    }
+
+    .main-account .main-account-a {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    .tweetButton {
+        display: block;
+    }
+
+    .tweet-button .mybtn {
+        display: none;
+    }
 }
 
 
