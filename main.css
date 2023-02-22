@@ -1,12 +1,9 @@
 ul {
     margin: 0 !important;
     padding: 0 !important;
-<<<<<<< HEAD
 
 
     
-=======
->>>>>>> 31e27525866dffa55882e0dc40dad9852a0b31aa
 }
 
 a{
@@ -66,6 +63,10 @@ img {
 
 .nav-links .active {
     font-weight: 700;
+
+
+
+    
 }
 
 .nav-links .nav-link-a .fa-twitter {
