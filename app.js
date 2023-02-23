@@ -48,21 +48,43 @@ messageBox.addEventListener('click', function() {
   }
 });
 
-// active-link için
+// .active-link 
 function changeTab(evt, tabName) {
   console.log("object");
-  // tüm bağlantıları "active-link" sınıfından kaldır
+
   var links = document.getElementsByClassName("presantationA");
   for (var i = 0; i < links.length; i++) {
     links[i].className = links[i].className.replace(" active-link", "");
   }
 
-  // tıklanan bağlantıya "active-link" sınıfını ekle
   evt.currentTarget.className += " active-link";
 
-  // "active-link" sınıfına sahip bağlantının alt çizgisini genişlet
   var activeLink = document.getElementsByClassName("active-link")[0];
   var underline = activeLink.nextElementSibling;
   underline.style.width = activeLink.offsetWidth + "px";
+}
+
+
+// custom js
+
+let myinput = document.getElementById("myinput");
+let customInput = document.getElementById("custom-input");
+let biSearch = document.querySelector(".bi-search");
+
+myinput.addEventListener("focus",borderEffect)
+
+function borderEffect(){
+    customInput.style.border = "1px solid #1d9bf0";
+    customInput.style.backgroundColor ="#fff";
+    myinput.style.backgroundColor ="#fff";
+    biSearch.style.color ="#1d9bf0";
+}
+
+document.querySelector(".hover-effect").addEventListener("click",myfunc)
+function myfunc(){
+    customInput.style.border = "1px solid #dfdfdf";
+    customInput.style.backgroundColor ="#dfdfdf";
+    myinput.style.backgroundColor ="#dfdfdf";
+    biSearch.style.color ="#0f0f0f";
 }
 
