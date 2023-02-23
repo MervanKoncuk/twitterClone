@@ -29,9 +29,10 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0 10px 20px;
+    /* padding: 10px 0 10px 20px; */
     height: 100%;
     position:fixed;
+    margin-left: 2rem;
 }
 
 .nav-links {
@@ -864,7 +865,7 @@ a{
     }
 
     .center {
-        width: 100%;
+        width: 82%;
     }
 
     .iconSet {
@@ -913,8 +914,8 @@ a{
         margin-left: 10px;
     }
 
-    .leftSide {
-        padding: 10px 0 10px 60px;
+    .col-md-3 {
+        width: 17%;
     }
 
     .messagaBoxRight .message p {
@@ -929,7 +930,27 @@ a{
         justify-content: space-between;
         align-items: center;
 }
+
 #canv{
     display: block;
 }
+
+
+@media screen and (max-width:576px) {
+    .leftSide {
+        display: none;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .heading {
+        display: none !important;
+    }
+
+    .inputHeader {
+        display: none !important;
+    }
 }
+
