@@ -1,3 +1,8 @@
+body{
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
 ul {
     margin: 0 !important;
     padding: 0 !important;
@@ -5,10 +10,6 @@ ul {
 
 a{
     text-decoration: none;
-
-
-
-    
 }
 
 ul li {
@@ -55,10 +56,6 @@ img {
 
 .nav-links .active {
     font-weight: 700;
-
-
-
-    
 }
 
 .nav-links .nav-link-a .fa-twitter {
@@ -165,17 +162,10 @@ img {
 /* Center Start */
 .center {
     width: 40%;
-    /* min-width: 300px; */
     border-right: 1px solid rgba(214, 214, 214, 0.532);
     border-left: 1px solid rgba(214, 214, 214, 0.532);
     overflow-y:scroll;
-    /* height: 700px; */
 }
-
-/* .center .centerContent .heading {
-    position: sticky;
-    top:0;
-} */
 
 .heading-text {
     font-size: 1.2rem;
@@ -184,11 +174,8 @@ img {
 
 .center .centerContent .tablist {
     width: 100%;
-    /* padding: 0 35px; */
     display: flex;
     border-bottom: 1px solid rgba(214, 214, 214, 0.532);
-    /* position: sticky;
-    top: 0; */
 }
 
 .center .centerContent .tablist .presantation {
@@ -235,7 +222,6 @@ img {
 .dropdown-menu {
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* height: 200px; */
     border-radius: 15px !important;
 }
 
@@ -526,9 +512,6 @@ img {
 .chat-account .chat-account-a {
     display: flex;
     padding: 10px 0;
-    /* justify-content: space-between; */
-    /* padding: 8px 10px 8px 15px !important; */
-    /* margin-left: 10px !important; */
 }
 
 .chat-account .chat-account-a .chat-img {
@@ -567,15 +550,6 @@ img {
     color: black;
 }
 /* Message Box */
-
-
-
-
-body{
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
-
 
 .box{
     width: 600px;
@@ -758,7 +732,6 @@ a{
     cursor: pointer;
 }
 
-
 .takip-btn{
     width: 80px;
     height: 30px;
@@ -809,51 +782,103 @@ a{
 /* Responsive OffCanvas Menu  */
 .responisve-navmenu{
     display: none;
-    background-color: #156ba0;
+    background-color: #fff;
     width: 100%;
     height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    cursor: pointer;
 }
 .responisve-navmenu i{
-    color: white;
+    color: black;
+    font-size: 1.4rem;
 }
+
 #canv{
     display: none;
     margin-right: 2rem;
 }
 .offcanvas-body{
     display: flex;
-    flex-direction: column;  
-    background-image: url(https://www.freeiconspng.com/thumbs/logo-twitter-png/black-logo-twitter-26.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
+    flex-direction: column;
 }
 
-.offcanvas-body a {
-    padding-top: 2rem;
+.offcanvas {
+    width: 65% !important;
 }
-.offcanvas-body a:hover{
-    background-color: #acacac;
-    border-radius:16px;
+
+.canvas-user {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.offcanvas-body a i{
-    width: 2rem;
+
+.canvas-user img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.offcanvas-body a span{
-    padding-left: 2rem;
-    font-size: 2rem;
+
+.canvas-user i {
+    font-size: 1.5rem;
 }
+
+.canvas-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.canvas-content .canvas-content-list {
+    padding-top: 1rem;
+    color: #0f0f0f;
+}
+
+.canvas-content .canvas-content-list i {
+    margin-right: 1.3rem;
+    font-size: 1.4rem;
+}
+
+.canvas-content .canvas-content-list .canvas-content-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .heading{
     display: flex;
 }
 
-/* Responsive*/
+.tweet-button-responsive {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(29,155,249,0.9);
+    border-radius: 100px;
+    padding: 13px;
+    display: none;
+    position: fixed;
+    bottom:4rem;
+    right: 2rem;
+}
 
-@media screen and (max-width:900px){
+#canv{
+    display: none;
+    position: fixed;
+}
+
+/*! Responsive*/
+
+@media screen and (max-width:965px){
     .rightSide {
         display: none;
     }
-    .leftSide{display: none;}
+
+    #canv{
+        display: none !important;
+    }
 
     .nav-links .nav-link-a span {
         display: none;
@@ -896,7 +921,6 @@ a{
     }
 
     .nav-links .nav-link-a {
-        /* padding: 8px 8px 10px 8px; */
         width: 50px;
         padding: 10px 0;
         padding-left: 9px;
@@ -927,17 +951,7 @@ a{
     .messageBoxIcon ul {
         font-size: 12px;
     }
-    .responisve-navmenu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 }
-
-#canv{
-    display: block;
-}
-
-
 @media screen and (max-width:576px) {
     .leftSide {
         display: none;
@@ -954,5 +968,22 @@ a{
     .inputHeader {
         display: none !important;
     }
+
+    .responisve-navmenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #canv{
+        display: block !important;
+    }
+
+    .tweet-button-responsive {
+        display: block;
+    }
 }
+
+
+
 
